@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electon </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="/src/styles/style.css">
+</head>
+<body>
+  <header class="">
+      <div class="container-fluid bg-light py-2">
+          <div class="row">
+              <div class="col-md-6 text-left">
+                  <p class="mb-0">Need help? Call us: (+98) 0234 456 789</p>
+              </div>
+              <div class="col-md-6 text-right">
+                  <a href="#" class="text-dark mr-3"><i class="fas fa-map-marker-alt"></i> Our store</a>
+                  <a href="#" class="text-dark"><i class="fas fa-truck"></i> Track your order</a>
+              </div>
+          </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bgForNav fixed-top">
+        <a class="navbar-brand ml-4" href="/src/main_page.html">
+          <img src="/src/img/logo.svg" alt="Logo" style="width: 150px;">
+        </a>
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarContent">
+          
+          <div class="input-group mx-auto" style="max-width: 500px;">
+            <input type="text" class="form-control" placeholder="Search anything" aria-label="Search anything">
+            <div class="input-group-append">
+              <button class="btn btn-warning" type="button">Search</button>
+            </div>
+          </div>
+          
+          <ul class="navbar-nav ml-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link text-light d-flex align-items-center textSize-small" href="#">
+                <img src="/src/img/sing-in.svg" alt="" class="mr-2 "> Sign In
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light d-flex align-items-center textSize-small" href="#">
+                <img src="/src/img/favorites.svg" alt="" class="mr-2"> Favorites
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light d-flex align-items-center textSize-small" href="/src/cart.html">
+                <img src="/src/img/cart.svg" alt="" class="mr-2"> Cart
+                <span id="cart-count" class="badge badge-light ml-2">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+  <main class="pl-5 pr-5"> 
+    <section class="container-fluid">
+      <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center pr-lg-5 bgCategories">
+        <nav class="navbar navbar-expand-lg navbar-light py-0 px-3 px-lg-5 w-100 w-lg-auto">
+          <a class="dropdown-menu-large d-flex align-items-center menuBg nav-link dropdown-toggle text-light" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Browse categories
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav listColor">
+              <li class="nav-item dropdown">
+                <a class="nav-link text-dark dropdown-toggle" href="#" id="homeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Home
+                </a>
+                <div class="dropdown-menu" aria-labelledby="homeDropdown">
+                  <a class="dropdown-item" href="/src/all_category.html">All Category</a>
+                  <a class="dropdown-item" href="#">Home Item 2</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-dark dropdown-toggle" href="#" id="catalogDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Catalog
+                </a>
+                <div class="dropdown-menu" aria-labelledby="catalogDropdown">
+                  <a class="dropdown-item" href="#">Item 1</a>
+                  <a class="dropdown-item" href="#">Item 2</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-dark dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pages
+                </a>
+                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                  <a class="dropdown-item" href="#">Page 1</a>
+                  <a class="dropdown-item" href="#">Page 2</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
+        <p class="bannerText font-weight-bold mt-3 mt-lg-0">30 Days Free Premium</p>
+      </div>
+    
+      <div class="row cstm-padding-x cstm-padding-y justify-content-between align-items-center">
+        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center mt-5">
+          <p class="text-big secondary-blue font-weight-bold text-left cstm-font-size" style="max-width: 100%;">
+            Canon camera
+          </p>
+          <div class="d-flex flex-column flex-sm-row cstm-gap-desktop">
+            <button class="border-0 cstm-border text-light p-3 btn-bg mb-2 mb-sm-0">
+              Shop Now
+            </button>
+            <button class="cstm-border p-3 btn-border bg-light">
+              View More
+            </button>
+          </div>
+          <div class="d-flex justify-content-center mt-5">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-center position-relative mt-5">
+          <img src="/src/img/camera.svg" alt="" class="img-fluid">
+          <img src="/src/img/sale_card.svg" alt="" class="position-absolute" style="top: 200px; left: 50%; transform: translateX(-50%);">
+        </div>
+      </div>
+      
+    
+      <div class="d-flex flex-wrap justify-content-center" style="gap: 39px;">
+        <div class="d-flex align-items-center mb-4">
+          <img src="/src/img/left-arrow.svg" alt="" class="d-none d-md-block" style="width: 37px; height: 37px;" role="button">
+          <div class="d-flex carousel-card">
+            <img src="/src/img/speaker.svg" alt="" class="img-fluid">
+            <div class="d-flex flex-column justify-content-center">
+              <p class="secondary-blue font-weight-bold" style="font-size: 23px;">Speaker</p>
+              <p class="secondary-blue font-weight-normal" style="font-size: 18px;">(6 items)</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex carousel-card mb-4">
+          <img src="/src/img/comp.svg" alt="" style="width: 155px; height: 95px;" class="img-fluid">
+          <div class="d-flex flex-column justify-content-center">
+            <p class="secondary-blue font-weight-bold" style="font-size: 23px;">Desktop & laptop</p>
+            <p class="secondary-blue font-weight-normal" style="font-size: 18px;">(6 items)</p>
+          </div>
+        </div>
+        <div class="d-flex flex-row-reverse align-items-center mb-4">
+          <img src="/src/img/right-arrow.svg" alt="" class="d-none d-md-block" style="width: 37px; height: 37px;" role="button">
+          <div class="d-flex carousel-card">
+            <img src="/src/img/camera2.svg" alt="" style="width: 155px; height: 95px;" class="img-fluid">
+            <div class="d-flex flex-column justify-content-center">
+              <p class="secondary-blue font-weight-bold" style="font-size: 23px;">DSLR camera</p>
+              <p class="secondary-blue font-weight-normal" style="font-size: 18px;">(6 items)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+        
+        <section class="mt-5">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="bannerText font-weight-bold text-mid">Popular products</p>
+            <div>
+              <button class="cstm-border ml-3 p-2 px-4 btn-border rounded-pill bg-light">
+                Cameras
+              </button>
+              <button class="cstm-border ml-3 p-2 px-4 rounded-pill btn-border bg-light">
+                Laptops
+              </button>
+              <button class="cstm-border ml-3 p-2 px-4 rounded-pill bg-light btn-border">
+                Tablets
+              </button>
+              <button class="cstm-border ml-3 p-2 px-4 rounded-pill bg-light btn-border">
+                Mouse
+              </button>
+            </div>
+          </div>
+          <div class="container my-4 ">
+            <div class="row d-flex justify-content-center align-items-center ">
+                <div class="col-md-3 mb-4">
+                    <div class="card p-4 border-card">
+                        <img src="/src/img/camera3.svg" class="card-img-top" alt="Camera">
+                        <div class="card-body text-left">
+                            <p class="card-title bannerText font-weight-normal">Camera</p>
+                            <p class="price">$11.70</p>
+                            <img src="/src/img/stars.svg" alt="">
+                        </div>
+                        <div class="hover-buttons">
+                            <button>
+                                <span>Add to cart</span>
+                                <img src="/src/img/shop-icn.svg" alt="Cart Icon">
+                            </button>
+                            <button>
+                                
+                                <img src="/src/img/eye-icn.svg" alt="View Icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card p-4 border-card">
+                        <img src="/src/img/headphonee.svg" class="card-img-top" alt="Wireless headphones">
+                        <div class="card-body text-left">
+                            <p class="card-title bannerText font-weight-normal">Wireless headphones</p>
+                            <p class="price">$11.70</p>
+                            <img src="/src/img/stars.svg" alt="">
+                        </div>
+                        <div class="hover-buttons">
+                            <button>
+                                <span>Add to cart</span>
+                                <img src="/src/img/shop-icn.svg" alt="Cart Icon">
+                            </button>
+                            <button>
+                                
+                                <img src="/src/img/eye-icn.svg" alt="View Icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card p-4 border-card">
+                        <img src="/src/img/gamepad.svg" class="card-img-top" alt="Play game">
+                        <div class="card-body text-left">
+                            <p class="card-title bannerText font-weight-normal">Play game</p>
+                            <p class="price">$11.70</p>
+                            <img src="/src/img/stars.svg" alt="">
+                        </div>
+                        <div class="hover-buttons">
+                            <button>
+                                <span>Add to cart</span>
+                                <img src="/src/img/shop-icn.svg" alt="Cart Icon">
+                            </button>
+                            <button>
+                                <a href="/src/product.html">
+                                  
+                                  <img src="/src/img/eye-icn.svg" alt="View Icon">
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card p-4 border-card">
+                        <img src="/src/img/comp2.svg" class="card-img-top" alt="Tablet as a laptop">
+                        <div class="card-body text-left">
+                            <p class="card-title bannerText font-weight-normal">Tablet as a laptop</p>
+                            <p class="price">$11.70</p>
+                            <img src="/src/img/stars.svg" alt="">
+                        </div>
+                        <div class="hover-buttons">
+                            <button>
+                                <span>Add to cart</span>
+                                <img src="/src/img/shop-icn.svg" alt="Cart Icon">
+                            </button>
+                            <button>
+                                
+                                <img src="/src/img/eye-icn.svg" alt="View Icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-3 mb-4 ">
+                    <div class="card p-4 border-card">
+                        <img src="/src/img/comp2.svg" class="card-img-top" alt="Tablet as a laptop">
+                        <div class="card-body text-left">
+                            <p class="card-title bannerText font-weight-normal">Tablet as a laptop</p>
+                            <p class="price">$11.70</p>
+                            <img src="/src/img/stars.svg" alt="">
+                        </div>
+                        <div class="hover-buttons">
+                            <button>
+                                <span>Add to cart</span>
+                                <img src="/src/img/shop-icn.svg" alt="Cart Icon">
+                            </button>
+                            <button>
+                               
+                                <img src="/src/img/eye-icn.svg" alt="View Icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card p-4 border-card">
+                        <img src="/src/img/headphonee.svg" class="card-img-top" alt="Wireless headphones">
+                        <div class="card-body text-left">
+                            <p class="card-title bannerText font-weight-normal">Wireless headphones</p>
+                            <p class="price">$11.70</p>
+                            <img src="/src/img/stars.svg" alt="">
+                        </div>
+                        <div class="hover-buttons">
+                            <button>
+                                <span>Add to cart</span>
+                                <img src="/src/img/shop-icn.svg" alt="Cart Icon">
+                            </button>
+                            <button>
+                                
+                                <img src="/src/img/eye-icn.svg" alt="View Icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card p-4 border-card">
+                        <img src="/src/img/gamepad.svg" class="card-img-top" alt="Play game">
+                        <div class="card-body text-left">
+                            <p class="card-title bannerText font-weight-normal">Play game</p>
+                            <p class="price">$11.70</p>
+                            <img src="/src/img/stars.svg" alt="">
+                        </div>
+                        <div class="hover-buttons">
+                            <button>
+                                <span>Add to cart</span>
+                                <img src="/src/img/shop-icn.svg" alt="Cart Icon">
+                            </button>
+                            <button>
+                                <a href="/src/product.html">
+
+                                  <img src="/src/img/eye-icn.svg" alt="View Icon">
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card p-4 border-card">
+                        <img src="/src/img/comp2.svg" class="card-img-top" alt="Tablet as a laptop">
+                        <div class="card-body text-left">
+                            <p class="card-title bannerText font-weight-normal">Tablet as a laptop</p>
+                            <p class="price">$11.70</p>
+                            <img src="/src/img/stars.svg" alt="">
+                        </div>
+                        <div class="hover-buttons">
+                            <button>
+                                <span>Add to cart</span>
+                                <img src="/src/img/shop-icn.svg" alt="Cart Icon">
+                            </button>
+                            <button>
+                               
+                                <img src="/src/img/eye-icn.svg" alt="View Icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div class="d-flex justify-content-center mt-5 " >
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </section>
+
+        <section class=" rounded-lg saleUp mt-5  d-flex align-items-start justify-content-end" style="padding-right: 149px; padding-top: 92px; " >
+            <div class="d-flex flex-column align-items-center ">
+              <button class=" border-0 cstm-border text-light px-3 py-2 btn-bg mb-2 mb-sm-0" style="font-size: 14px; border-radius: 30px;">
+                New Laptop
+              </button>
+              <p class="font-weight-bold mt-4" style="color: #2E8FC5; font-size: 41px;">Sale up to 50% off</p>
+              <p class="font-weight-normal text-light" style="font-size: 18px">12 inch hd display</p>
+              <button class="border-0 cstm-border mt-4 text-light px-3 py-2 btn-bg mb-2 mb-sm-0" style="font-size: 14px; border-radius: 30px;">
+                Shop now
+              </button>
+            </div>
+        </section>
+
+        <section class="d-flex justify-content-between align-items-center" style="margin-top: 94px; " id="conatiner">
+          <div class="col-md-6 col-sm-6 mb-4">
+            <div class="big-card-border p-4 border-card d-flex flex-column flex-md-row">
+              <div>
+                <img src="/src/img/speakers.svg" class="card-img-top" alt="Camera">
+              </div>
+              <div class="d-flex flex-column justify-content-center" style="gap: 20px;">
+                <div class="text-left hide-on-small">
+                  <p class="card-title bannerText font-weight-normal">JBL bar 2.1 deep bass</p>
+                  <p class="price">$11.70</p>
+                  <img src="/src/img/stars.svg" alt="">
+                </div>
+                <div class="d-flex" style="gap: 10px;">
+                  <div class="rounded-pill d-flex justify-content-center align-items-center circle-bg font-weight-bold" style="background-color: #E2F4FF; width: 66px; height: 66px;">57</div>
+                  <div class="rounded-pill d-flex justify-content-center align-items-center circle-bg font-weight-bold" style="background-color: #E2F4FF; width: 66px; height: 66px;">11</div>
+                  <div class="rounded-pill d-flex justify-content-center align-items-center circle-bg font-weight-bold" style="background-color: #E2F4FF; width: 66px; height: 66px;">33</div>
+                  <div class="rounded-pill d-flex justify-content-center align-items-center circle-bg font-weight-bold" style="background-color: #E2F4FF; width: 66px; height: 66px;">59</div>
+                </div>
+                <div class="d-flex align-items-center" style="gap: 20px;">
+                  <button class="border-0 d-flex justify-content-center align-items-center p-2" style="background-color: #87BCD9; border-radius: 8px;">
+                    <span>Add to cart</span>
+                    <img src="/src/img/shop-icn.svg" alt="Cart Icon" class="ml-5">
+                  </button>
+                  <button class="border-0 d-flex justify-content-center align-items-center p-3" style="background-color: #87BCD9; border-radius: 8px;">
+                    <img src="/src/img/eye-icn.svg" alt="Cart Icon">
+                  </button>
+                </div>
+                <div class="d-flex justify-content-center" style="margin-right: 0;">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+          <div class="d-flex flex-column ml-5">
+            <div class="col-md-3 mb-4">
+              <div class="big-card-border p-4 border-card d-flex flex-row">
+                  <div>
+                    <img src="/src/img/gamepad2.svg" class="card-img-top" alt="Play game" style="width: 282px; height: 168px;">
+                  </div>
+                  <div>
+                    <div class=" text-left">
+                      <p class="card-title bannerText font-weight-normal">Play game</p>
+                      <p class="price">$11.70</p>
+                      <img src="/src/img/stars.svg" alt="">
+                  </div>
+                  
+            </div>
+              </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="big-card-border p-4 border-card d-flex flex-row">
+                <div>
+                  <img src="/src/img/comp.svg" class="card-img-top" alt="Play game" style="width: 282px; height: 168px;">
+                </div>
+                <div>
+                  <div class=" text-left">
+                    <p class="card-title bannerText font-weight-normal">Play game</p>
+                    <p class="price">$11.70</p>
+                    <img src="/src/img/stars.svg" alt="">
+                </div>
+                
+          </div>
+            </div>
+        </div>
+          </div>
+        </section>
+
+        <section class="w-100 border-card d-flex justify-content-center align-items-center flex-wrap" style="margin-top: 75px; padding: 44px 118px; background-color: #E2F4FF;">
+          <div class="d-flex align-items-center flex-column flex-md-row text-center text-md-left mb-4 mb-md-0 desktop-gap" style="gap: 31px;">
+            <img src="/src/img/delivery.svg" alt="Free delivery icon">
+            <div class="d-flex flex-column">
+              <p class="bannerText font-weight-bold">Free delivery</p>
+              <p class="bannerText font-weight-normal">on order above $50.00</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center flex-column flex-md-row text-center text-md-left mb-4 mb-md-0 desktop-gap" style="gap: 31px;">
+            <img src="/src/img/quality.svg" alt="Best quality icon">
+            <div class="d-flex flex-column">
+              <p class="bannerText font-weight-bold">Best quality</p>
+              <p class="bannerText font-weight-normal">best quality in low price</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center flex-column flex-md-row text-center text-md-left" style="gap: 31px;">
+            <img src="/src/img/lock.svg" alt="1 year warranty icon">
+            <div class="d-flex flex-column">
+              <p class="bannerText font-weight-bold">1 Year warranty</p>
+              <p class="bannerText font-weight-normal">Available warranty</p>
+            </div>
+          </div>
+        </section>
+      
+        <section class="w-100 d-flex flex-column mt-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 mb-4">
+              <div class="big-card-border d-flex flex-column" style="gap: 26px; padding: 18px;">
+                <div class="d-flex align-items-center" style="gap: 37px;">
+                  <img src="/src/img/profile-1.svg" alt="">
+                  <p class="font-weight-normal bannerText" style="font-size: 16px;">Savanah Nguyen</p>
+                </div>
+                <div class="w-100" style="background-color: #E2F4FF; border-radius: 20px; padding: 11px 26px;">
+                  <p class="" style="max-width: 395px;">Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 mb-4">
+              <div class="big-card-border d-flex flex-column" style="gap: 26px; padding: 18px;">
+                <div class="d-flex align-items-center" style="gap: 37px;">
+                  <img src="/src/img/profile-2.svg" alt="">
+                  <p class="font-weight-normal bannerText" style="font-size: 16px;">Esther Howard</p>
+                </div>
+                <div class="w-100" style="background-color: #E2F4FF; border-radius: 20px; padding: 11px 26px;">
+                  <p class="" style="">Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 mb-4">
+              <div class="big-card-border d-flex flex-column" style="gap: 26px; padding: 18px;">
+                <div class="d-flex align-items-center" style="gap: 37px;">
+                  <img src="/src/img/profile-3.svg" alt="">
+                  <p class="font-weight-normal bannerText" style="font-size: 16px;">Esther Howard</p>
+                </div>
+                <div class="w-100" style="background-color: #E2F4FF; border-radius: 20px; padding: 11px 26px;">
+                  <p class="" style="max-width: 395px;">Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-5">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </section>
+        
+        <section class="w-100 border-card d-flex justify-content-center align-items-center flex-wrap" style="margin-top: 75px; padding: 44px 118px; background-color: #E2F4FF;">
+          <div class="d-flex justify-content-center align-items-start" style="gap: 55px;">
+            <img src="/src/img/commerc1.svg" alt="">
+            <img src="/src/img/commerc2.svg" alt="">
+            <img src="/src/img/commerc3.svg" alt="">
+            <img src="/src/img/commerc4.svg" alt="">
+            <img src="/src/img/commerc5.svg" alt="">
+          </div>
+        </section>
+
+        <section class="w-100" style="margin-top: 101px;">
+          <div class="container">
+            <div class="row mb-4">
+              <div class="col-12 col-md-6">
+                <p role="button" class="secondary-blue font-weight-bold" style="font-size: 25px;">Latest news</p>
+              </div>
+              <div class="col-12 col-md-6 text-md-right">
+                <p role="button" class="secondary-blue font-weight-normal" style="font-size: 20px;">View all</p>
+              </div>
+            </div>
+        
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-6 mb-4">
+                <div class="d-flex flex-column flex-md-row" style="gap: 20px; max-width: 100%; border-radius: 20px; border: #C8C8C8 1px solid; padding: 15px;">
+                  <div class="flex-shrink-0">
+                    <img src="/src/img/Blog-1_540x490_crop_center 1.png" alt="" class="img-fluid" style="border-radius: 10px;">
+                  </div>
+                  <div class="d-flex flex-column justify-content-between">
+                    <button class="rounded-pill bg-light secondary-blue" style="max-width: 147px; border: #C8C8C8 1px solid; border-radius: 5px 18px;">22, oct, 2021</button>
+                    <div>
+                      <p class="secondary-blue font-weight-bold" style="font-size: 20px;">Who avoids a pain that produces?</p>
+                      <p class="bannerText font-weight-normal" style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.</p>
+                    </div>
+                    <p class="bannerText font-weight-normal" style="font-size: 14px;">By spacing tech</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-12 col-md-10 col-lg-6 mb-4">
+                <div class="d-flex flex-column flex-md-row" style="gap: 20px; max-width: 100%; border-radius: 20px; border: #C8C8C8 1px solid; padding: 15px;">
+                  <div class="flex-shrink-0">
+                    <img src="/src/img/Blog-2_540x490_crop_center 1.png" alt="" class="img-fluid" style="border-radius: 10px;">
+                  </div>
+                  <div class="d-flex flex-column justify-content-between">
+                    <button class="rounded-pill bg-light secondary-blue" style="max-width: 147px; border: #C8C8C8 1px solid; border-radius: 5px 18px;">22, oct, 2021</button>
+                    <div>
+                      <p class="secondary-blue font-weight-bold" style="font-size: 20px;">Who avoids a pain that produces?</p>
+                      <p class="bannerText font-weight-normal" style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.</p>
+                    </div>
+                    <p class="bannerText font-weight-normal" style="font-size: 14px;">By spacing tech</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col text-center mt-4">
+                <div class="d-flex justify-content-center" role="button">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+    </main>
+  <footer class="" style="background-color: #E2F4FF; padding: 42px 60px; margin-top: 101px;">
+    <div class="bg-light d-flex justify-content-between align-items-start " style="padding: 47px 95px; border-radius: 15px;">
+      <p class="secondary-blue font-weight-bold" style="font-size: 29px;">Subscribe newsletter</p>
+      <div class="search-box d-flex align-items-center">
+        <input type="text" class="form-control" placeholder="Email address">
+        <button class="btn search-button">
+            <img src="/src/img/send.svg" alt="Send" class="icon">
+        </button>
+    </div>
+    <div class="d-flex align-items-start">
+      <img src="/src/img/nausnik-logo.svg" alt="">
+      <p class="font-weight-bold" style="font-size: 14px; color: #606060; max-width: 130px;">Call us 24/7 :
+        (+62) 0123 567 789</p>
+    </div>
+
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center" style="margin-top: 41px;">
+        
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="d-flex flex-column justify-content-center" style="gap: 30px;">
+            <img src="/src/img/electon.svg" alt="" style="width: 140px; height: 39px;">
+            <p class="secondary-blue font-weight-normal" style="font-size: 16px; max-width: 183px;">
+              64 St James Boulevard, Hoswick, ZE2 7ZJ
+            </p>
+            <div class="d-flex flex-column" style="gap: 23px;">
+              <div style="height: 1px; width: 100%; background-color: #9D9D9D;"></div>
+              <div class="d-flex justify-content-start" style="gap: 37px;">
+                <img role="button" src="/src/img/google.svg" alt="" class="social-logo">
+                <img role="button" src="/src/img/facebook.svg" alt="" class="social-logo">
+                <img role="button" src="/src/img/whatsapp.svg" alt="" class="social-logo">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        
+        <div class="col-lg-9 col-md-12 col-sm-12">
+          <div class="d-flex flex-column flex-lg-row justify-content-between" style="gap: 80px;">
+          
+            <ul role="button" class="d-flex flex-column" style="gap: 7px; list-style-type: none;">
+              <li class="secondary-blue font-weight-bold" style="font-size: 19px;">Find product</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Brownze arnold</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Chronograph blue</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Smart phones</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Automatic watch</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Hair straighteners</li>
+            </ul>
+    
+           
+            <ul role="button" class="d-flex flex-column" style="gap: 7px; list-style-type: none;">
+              <li class="secondary-blue font-weight-bold" style="font-size: 19px;">Get help</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">About us</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Contact us</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Return policy</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Privacy policy</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Payment policy</li>
+            </ul>
+    
+          
+            <ul role="button" class="d-flex flex-column" style="gap: 7px; list-style-type: none;">
+              <li class="secondary-blue font-weight-bold" style="font-size: 19px;">About us</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">News</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Service</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Our policy</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Custmer care</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Faq’s</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+  
+    </footer>
+
+
+
+    <script src="/src/script/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>

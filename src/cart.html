@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electon Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="/src/styles/category.css">
+</head>
+<body>
+  <header class="">
+      <div class="container-fluid bg-light py-2">
+          <div class="row">
+              <div class="col-md-6 text-left">
+                  <p class="mb-0">Need help? Call us: (+98) 0234 456 789</p>
+              </div>
+              <div class="col-md-6 text-right">
+                  <a href="#" class="text-dark mr-3"><i class="fas fa-map-marker-alt"></i> Our store</a>
+                  <a href="#" class="text-dark"><i class="fas fa-truck"></i> Track your order</a>
+              </div>
+          </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bgForNav fixed-top">
+        <a class="navbar-brand ml-4" href="/src/main_page.html">
+          <img src="/src/img/logo.svg" alt="Logo" style="width: 150px;">
+        </a>
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarContent">
+          
+          <div class="input-group mx-auto" style="max-width: 500px;">
+            <input type="text" class="form-control" placeholder="Search anything" aria-label="Search anything">
+            <div class="input-group-append">
+              <button class="btn btn-warning" type="button">Search</button>
+            </div>
+          </div>
+          
+          <ul class="navbar-nav ml-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link text-light d-flex align-items-center textSize-small" href="#">
+                <img src="/src/img/sing-in.svg" alt="" class="mr-2 "> Sign In
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light d-flex align-items-center textSize-small" href="#">
+                <img src="/src/img/favorites.svg" alt="" class="mr-2"> Favorites
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light d-flex align-items-center textSize-small" href="#">
+                <img src="/src/img/cart.svg" alt="" class="mr-2"> Cart
+                <span id="cart-count" class="badge badge-light ml-2">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+  <main class="" style="padding-left: 61px; padding-right: 64px; ">
+    <section class="container-fluid">
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center pr-lg-5 bgCategories">
+            <nav class="navbar navbar-expand-lg navbar-light py-0 px-3 px-lg-5 w-100 w-lg-auto">
+                <a class="dropdown-menu-large d-flex align-items-center menuBg nav-link dropdown-toggle text-light" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  Browse categories
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav listColor">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link text-dark dropdown-toggle" href="#" id="homeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Home
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="homeDropdown">
+                        <a class="dropdown-item" href="#">All Category</a>
+                        <a class="dropdown-item" href="#">Home Item 2</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link text-dark dropdown-toggle" href="#" id="catalogDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Catalog
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="catalogDropdown">
+                        <a class="dropdown-item" href="#">Item 1</a>
+                        <a class="dropdown-item" href="#">Item 2</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link text-dark dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pages
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                        <a class="dropdown-item" href="#">Page 1</a>
+                        <a class="dropdown-item" href="#">Page 2</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" href="#">About Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              
+              <p class="bannerText font-weight-bold mt-3 mt-lg-0">30 Days Free Premium</p>
+        </div>
+        <div class="d-flex align-items-center " style="gap: 14px;   padding-top: 26px; padding-bottom: 26px;">
+            <div class="d-flex align-items-center " role="button" style="gap: 16px;">
+                <p class="font-weight-normal" style="color: #3A3A3A; font-size: 16px; margin-top: 12px;">Home</p>
+                <img src="/src/img/right--arrow.svg" alt="">
+    
+            </div>
+            <div class="d-flex align-items-center " role="button" style="gap: 16px;">
+                <p class="font-weight-normal" style="color: #3A3A3A; font-size: 16px; margin-top: 12px;">All Category</p>
+                <img src="/src/img/right--arrow.svg" alt="">
+    
+            </div>
+        </div>
+      </section>  
+      
+      <section>
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <table class="table">
+                        <thead class="bg-light">
+                            <tr style="background-color: #E2F4FF;">
+                                <th style="font-size: 20px;">Product</th>
+                                <th style="font-size: 20px;">Price</th>
+                                <th style="font-size: 20px;">Quantity</th>
+                                <th style="font-size: 20px;">Subtotal</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="/src/img/green-gamepad.svg" alt="Black Gamepad" class="img-fluid" style="width: 160px; height: 106px;">
+                                        <div class="ml-3">
+                                            <p class="font-weight-bold mb-1" style="color: #003F62; font-size: 18px;">Play game</p>
+                                            <p class="mb-0" style="font-size: 16px;">Color: Green</p>
+                                            <p class="mb-0" style="font-size: 16px;">Size: 30</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="font-size: 18px;">$ 11,70</td>
+                                <td>
+                                    <div class="input-group" style="max-width: 120px; margin-top: 22px;">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary" type="button">-</button>
+                                        </div>
+                                        <input type="text" class="form-control text-center" value="1" style="font-size: 18px;">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button">+</button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="font-size: 18px;">$ 11,70</td>
+                                <td class="text-center">
+                                    <img src="/src/img/delete.svg" alt="" role="button" style="margin-top: 28px; width: 30px; height: 30px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="/src/img/gamepad2.svg" alt="Black Gamepad" class="img-fluid" style="width: 160px; height: 106px;">
+                                        <div class="ml-3">
+                                            <p class="font-weight-bold mb-1" style="color: #003F62; font-size: 18px;">Play game</p>
+                                            <p class="mb-0" style="font-size: 16px;">Color: Black</p>
+                                            <p class="mb-0" style="font-size: 16px;">Size: 30</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="font-size: 18px;">$ 11,70</td>
+                                <td>
+                                    <div class="input-group" style="max-width: 120px; margin-top: 22px;">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary" type="button">-</button>
+                                        </div>
+                                        <input type="text" class="form-control text-center" value="1" style="font-size: 18px;">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button">+</button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="font-size: 18px;">$ 11,70</td>
+                                <td class="text-center">
+                                    <img src="/src/img/delete.svg" alt="" role="button" style="margin-top: 28px; width: 30px; height: 30px;">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                
+               
+                <div class="col-lg-4" style="border: #DFDFDF 1px solid; width: ;">
+                    <div class="p-3 bg-light" >
+                        <h4 class="font-weight-bold mb-3" >Cart total</h4>
+                        <p class="d-flex justify-content-between">
+                            <span>Subtotal</span>
+                            <span>$ 23,20</span>
+                        </p>
+                        <div class="form-group">
+                            <label>Enter coupon code</label>
+                            <div class="input-group" style="border: #DFDFDF 1px solid;">
+                                <input type="text" class="form-control" placeholder="Enter coupon code" style="background-color: white; border-radius: 12px;">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary bg-white" style=" border: none; color: #003F62; border-radius: 20px;">Apply</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label>County</label>
+                            <select class="form-control" style="border-radius: 12px;">
+                                <option>Select your county</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <p class="d-flex justify-content-between font-weight-bold">
+                            <span>Total amount</span>
+                            <span>$ 23,20</span>
+                        </p>
+                        <button class="btn btn-warning btn-lg btn-block text-light" style="border-radius: 20px; background-color: #EDA415;">Proceed to checkout</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row responsive-margin">
+                <div class="col-lg-12 text-center d-flex align-items-center justify-content-center" style="gap: 61px;">
+                    <button class="btn btn-warning btn-lg btn-block text-light" style="border-radius: 20px; background-color: #EDA415;">Continue shopping</button>
+                    <button type="button" class="btn btn-outline-secondary" style="padding: 14px 42px; border-radius: 32px;">Secondary</button>
+                    <button class="btn btn-outline-danger btn-lg" style="padding: 8px 42px; border-radius: 32px;">Clear</button>
+                </div>
+            </div>
+            
+        </div>
+        
+      </section>
+
+  </main>
+  <footer class="" style="background-color: #E2F4FF; padding: 42px 60px; margin-top: 101px;">
+    <div class="bg-light d-flex justify-content-between align-items-start " style="padding: 47px 95px; border-radius: 15px;">
+      <p class="secondary-blue font-weight-bold" style="font-size: 29px;">Subscribe newsletter</p>
+      <div class="search-box d-flex align-items-center">
+        <input type="text" class="form-control" placeholder="Email address">
+        <button class="btn search-button">
+            <img src="/src/img/send.svg" alt="Send" class="icon">
+        </button>
+    </div>
+    <div class="d-flex align-items-start">
+      <img src="/src/img/nausnik-logo.svg" alt="">
+      <p class="font-weight-bold" style="font-size: 14px; color: #606060; max-width: 130px;">Call us 24/7 :
+        (+62) 0123 567 789</p>
+    </div>
+
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center" style="margin-top: 41px;">
+        
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="d-flex flex-column justify-content-center" style="gap: 30px;">
+            <img src="/src/img/electon.svg" alt="" style="width: 140px; height: 39px;">
+            <p class="secondary-blue font-weight-normal" style="font-size: 16px; max-width: 183px;">
+              64 St James Boulevard, Hoswick, ZE2 7ZJ
+            </p>
+            <div class="d-flex flex-column" style="gap: 23px;">
+              <div style="height: 1px; width: 100%; background-color: #9D9D9D;"></div>
+              <div class="d-flex justify-content-start" style="gap: 37px;">
+                <img role="button" src="/src/img/google.svg" alt="" class="social-logo">
+                <img role="button" src="/src/img/facebook.svg" alt="" class="social-logo">
+                <img role="button" src="/src/img/whatsapp.svg" alt="" class="social-logo">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        
+        <div class="col-lg-9 col-md-12 col-sm-12">
+          <div class="d-flex flex-column flex-lg-row justify-content-between" style="gap: 80px;">
+            
+            <ul role="button" class="d-flex flex-column" style="gap: 7px; list-style-type: none;">
+              <li class="secondary-blue font-weight-bold" style="font-size: 19px;">Find product</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Brownze arnold</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Chronograph blue</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Smart phones</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Automatic watch</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Hair straighteners</li>
+            </ul>
+    
+            
+            <ul role="button" class="d-flex flex-column" style="gap: 7px; list-style-type: none;">
+              <li class="secondary-blue font-weight-bold" style="font-size: 19px;">Get help</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">About us</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Contact us</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Return policy</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Privacy policy</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Payment policy</li>
+            </ul>
+    
+            
+            <ul role="button" class="d-flex flex-column" style="gap: 7px; list-style-type: none;">
+              <li class="secondary-blue font-weight-bold" style="font-size: 19px;">About us</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">News</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Service</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Our policy</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Custmer care</li>
+              <li class="secondary-blue font-weight-normal list-item-with-circle" style="font-size: 19px;">Faq’s</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+  
+    </footer> 
+
+
+    <script src="/src/script/second.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>

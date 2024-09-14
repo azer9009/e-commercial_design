@@ -1,0 +1,13 @@
+<div class="container mt-5">
+  <div class="card" style="max-width: 400px; border-radius: 10px;">
+    <img src="your-image-url.jpg" class="card-img-top card-img" alt="Image">
+    <div class="card-body">
+      <p class="card-date">22,oct,2021</p>
+      <h5 class="card-title">Who avoids a pain that produces?</h5>
+      <p class="card-content">
+        Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.
+      </p>
+      <p class="card-text"><small class="text-muted">By spacing tech</small></p>
+    </div>
+  </div>
+</div>
